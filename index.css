@@ -1,0 +1,29 @@
+@import "@mikker/btn/src/btn";
+@import "/input.css";
+@import "tachyons";
+
+body {
+  background-color: #232946;
+  color: #b8c1ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fffffe;
+}
+
+.btn {
+  background-color: #eebbc3;
+  color: #232946;
+  border-width: 1px;
+}
+
+.input:focus,
+.btn:focus {
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

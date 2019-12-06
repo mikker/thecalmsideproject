@@ -1,0 +1,50 @@
+.input {
+  appearance: none;
+  background: var(--input-background);
+  border-radius: var(--input-border-radius);
+  border: var(--input-border-width) solid var(--input-border-color);
+  color: var(--input-color);
+  font-family: var(--input-font-family);
+  font-size: inherit;
+  padding: var(--input-padding);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.input:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+.input[disabled],
+.input.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input.validate:invalid,
+.input.invalid {
+  border-color: var(--red, #FF4136);
+}
+
+select.input {
+  background-image: url(data:image/gif;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  padding-right: 26px;
+}
+
+:root {
+  --input-background: var(--white, #fff);
+  --input-border-color: #eebbc3;
+  --input-border-radius: .25rem;
+  --input-border-width: 1px;
+  --input-color: var(--near-black, #111);
+  --input-disabled-color: var(--gray, #777);
+  --input-focus-border-color: var(--blue, #408BC9);
+  --input-font-family: var(--sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+  --input-padding: var(--spacing-small, .5rem);
+  --input-placeholder-color: var(--mid-gray, #999);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Calm Sideproject Book</title>
+    <script defer src="https://js.statickit.com/statickit.js"></script>
+    <!-- <script defer src="./index.js"></script> -->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="sans-serif f3-l pa3-ns f5 f3-ns pb4">
+    <main class="min-vh-100 flex flex-column flex-row-ns">
+      <section class="flex-none w-50-ns ph3 order-1-ns mb5">
+        <header class="mv4 f1-l f2-m lh-solid">
+          <h1>The Calm Sideproject</h1>
+        </header>
+
+        <div class="measure lh-copy">
+          <h2 class="f5 f3-ns">📚 I'm writing a book, it seems…</h2>
+
+          <p>
+            If this sounds like something you'd read, sign up below to be
+            notified of progress, early access and of course, eventually,
+            launch.
+          </p>
+        </div>
+
+        <form id="my-form">
+          <label class="f4 b mb2 dn" for="email">Email</label>
+
+          <div class="flex items-stretch mw6">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              required
+              class="input flex-auto br--left"
+              placeholder="me@provider.tld"
+            />
+            <button
+              type="submit"
+              class="btn flex-none br--right f7 f5-ns ph3-ns"
+            >
+              Sign up
+            </button>
+          </div>
+        </form>
+
+        <p class="f5 lh-copy dn" id='success'>
+          <strong class="near-white">🙏 You're in!</strong>
+          I'll let you know when there's more to know.
+        </p>
+      </section>
+
+      <section
+        class="flex-none w-50-ns ph3 flex items-center justify-center order-0-ns"
+      >
+        <blockquote
+          class="twitter-tweet"
+          data-dnt="true"
+          data-theme="light"
+          data-link-color="#232946"
+        >
+          <p lang="en" dir="ltr">
+            I’ve started a healthy business on way less, next to my calm 40-hour
+            job!<br /><br />I think I should write a book called “The Calm
+            Sideproject”
+          </p>
+          &mdash; Mikkel Malmberg (@mikker)
+          <a
+            href="https://twitter.com/mikker/status/1202301125116006402?ref_src=twsrc%5Etfw"
+            >December 4, 2019</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </section>
+    </main>
+
+    <script>
+      window.sk =
+        window.sk ||
+        function() {
+          (sk.q = sk.q || []).push(arguments);
+        };
+
+      sk("form", "init", {
+        site: "421ea638240c",
+        form: "contact-form",
+        element: "#my-form",
+        onSuccess: function(config) {
+          config.form.classList.add('dn')
+          document.getElementById('success').classList.remove('dn')
+        }
+      });
+    </script>
+  </body>
+</html>

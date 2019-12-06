@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@mikker/btn": "^1.1.1",
+    "parcel-bundler": "^1.12.4",
+    "tachyons": "^4.11.1"
+  }
+}
